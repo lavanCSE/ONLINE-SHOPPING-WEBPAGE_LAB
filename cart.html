@@ -1,82 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>cart page</title>
-<style>
-table,th,td{
-border-collapse:collapse;
-margin-bottom:30px;
-border:1px solid #999;
-}
-</style>
+<title>Cart Page</title>
 </head>
-<body>
-<h1><i>FASHION JUST A CLICK AWAY!</i></h1>
-<img src="images/im7.jpeg" height="50px" width="50px" <h2><i>lavas cart</i></h2>
-<center>
-<nav>
-<a href="home.html">HOME</a>|
-<a href="products.html">PRODUCTS</a>|
-<a href="cart.html">CART</a>|
-<a href ="thankyou.html">THANKYOU</a>|
-</nav>
-</center>
-<hr>
-<h3><i><strong>YOUR SELECTED ITEMS</i></strong></h3>
-<table>
-<tr>
-<th>Product Name</th>
-<th>Quantity</th>
-<th>Price</th>
-<th>Total</th>
-</tr>
-<tr>
-<td>Full sleeves with dupatta</td>
-<td>2</td>
-<td>1500</td>
-<td>3000</td>
-</tr>
-<tr>
-<td>Traditional Sarees</td>
-<td>3</td>
-<td>2000</td>
-<td>6000</td>
-</tr>
-</table>
-<h2><i>Customer Details</i></h2>
-<form>
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" placeholder="Enter your name" required><br>
-<p></p>
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" placeholder="Enter your email" required><br>
-<p></p>
-    <label for="address">Shipping Address:</label>
-    <textarea id="address" rows="3" placeholder="Enter your address" required></textarea><br>
-<p></p>
-    <label for="payment">Payment Method:</label>
-    <select id="payment" required><br>
-      <option value="">Select</option>
-      <option value="cod">Cash on Delivery</option>
-      <option value="upi">UPI</option>
-      <option value="card">Debit/Credit Card</option>
-    </select>
-<p></p>
-    <input type="submit" value="Place Order">
-</form>
-<center><h2><i>Delivery in 3-5 business days!</i><h2></center>
-<footer>
-<h2><strong>Need Help?</strong></h2>
-<h3><i>contact us</i></h3>
-<p>phone:<a href="tel:+1146273789">+1(123)456-7890</a></p>
-<p>email-id:<a href="lavas@my.com">Email-address</a></p>
-</footer>
-<h2><i>follow us</i></h2>
-<footer>
-<a href="https://facebook.com/mypage">Facebook</a><br>
-<a href="https://twitter.com/mypage">Twitter</a><br>
-<a href="https://instagram.com/mypage">Instagram</a>
-</footer>
-</body>
+<body style="font-family: Arial, sans-serif; margin: 20px; background-color:burlywood; color: #333;">
 
+<h1 style="text-align:center; color:#b22222; text-shadow: 2px 2px 4px #999;">
+  <i>FASHION JUST A CLICK AWAY!</i>
+</h1>
+
+<div style="display:flex; align-items:center; gap:10px; margin-bottom:15px;">
+  <img src="images/im7.jpeg" height="50" width="50" style="border-radius:5px;">
+  <h2 style="color:#444;"><i>Lavas Cart</i></h2>
+</div>
+
+<center style="margin-bottom:15px;">
+  <nav style="font-size: 18px;">
+    <a href="home.html" style="text-decoration:none; color:#b22222; margin:0 10px;">HOME</a>|
+    <a href="products.html" style="text-decoration:none; color:#b22222; margin:0 10px;">PRODUCTS</a>|
+    <a href="cart.html" style="text-decoration:none; color:#b22222; margin:0 10px;">CART</a>|
+    <a href="thankyou.html" style="text-decoration:none; color:#b22222; margin:0 10px;">THANKYOU</a>|
+  </nav>
+</center>
+
+<hr style="border:1px solid #ccc;">
+
+<h3 style="color:#555; margin-top:20px;"><i><strong>YOUR SELECTED ITEMS</strong></i></h3>
+
+<table style="border-collapse:collapse; margin-bottom:30px; width:100%; border:1px solid #999;">
+  <tr style="background-color:#f4f4f4;">
+    <th style="border:1px solid #999; padding:10px;">Product Name</th>
+    <th style="border:1px solid #999; padding:10px;">Quantity</th>
+    <th style="border:1px solid #999; padding:10px;">Price</th>
+    <th style="border:1px solid #999; padding:10px;">Total</th>
+  </tr>
+  <tr>
+    <td style="border:1px solid #999; padding:10px;">Full sleeves with dupatta</td>
+    <td style="border:1px solid #999; padding:10px;">2</td>
+    <td style="border:1px solid #999; padding:10px;">1500</td>
+    <td style="border:1px solid #999; padding:10px;">3000</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #999; padding:10px;">Traditional Sarees</td>
+    <td style="border:1px solid #999; padding:10px;">3</td>
+    <td style="border:1px solid #999; padding:10px;">2000</td>
+    <td style="border:1px solid #999; padding:10px;">6000</td>
+  </tr>
+</table>
+
+<h2 style="color:#444;"><i>Customer Details</i></h2>
+
+<form style="line-height:2;">
+  <label for="name">Full Name:</label><br>
+  <input type="text" id="name" placeholder="Enter your name" required style="padding:5px; width:250px; border:1px solid #aaa; border-radius:5px;"><br>
+
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" placeholder="Enter your email" required style="padding:5px; width:250px; border:1px solid #aaa; border-radius:5px;"><br>
+
+  <label for="address">Shipping Address:</label><br>
+  <textarea id="address" rows="3" placeholder="Enter your address" required style="padding:5px; width:250px; border:1px solid #aaa; border-radius:5px;"></textarea><br>
+
+  <label for="payment">Payment Method:</label><br>
+  <select id="payment" required style="padding:5px; width:260px; border:1px solid #aaa; border-radius:5px;">
+    <option value="">Select</option>
+    <option value="cod">Cash on Delivery</option>
+    <option value="upi">UPI</option>
+    <option value="card">Debit/Credit Card</option>
+  </select><br><br>
+
+  <input type="submit" value="Place Order" style="background-color:#b22222; color:#fff; padding:8px 15px; border:none; border-radius:5px; cursor:pointer;">
+</form>
+
+<center>
+  <h2 style="color:green; margin-top:20px;"><i>Delivery in 3-5 business days!</i></h2>
+</center>
+
+<footer style="margin-top:30px; background:#f4f4f4; padding:15px; border-radius:5px;">
+  <h2 style="color:#b22222;"><strong>Need Help?</strong></h2>
+  <h3><i>Contact Us</i></h3>
+  <p>Phone: <a href="tel:+1146273789" style="color:#333;">+1(123)456-7890</a></p>
+  <p>Email: <a href="mailto:lavas@my.com" style="color:#333;">Email-address</a></p>
+</footer>
+
+<h2 style="margin-top:15px; color:#b22222;"><i>Follow Us</i></h2>
+<footer style="background:#f4f4f4; padding:10px; border-radius:5px;">
+  <a href="https://facebook.com/mypage" style="color:#3b5998;">Facebook</a><br>
+  <a href="https://twitter.com/mypage" style="color:#1da1f2;">Twitter</a><br>
+  <a href="https://instagram.com/mypage" style="color:#e4405f;">Instagram</a>
+</footer>
+
+</body>
 </html>

@@ -2,26 +2,102 @@
 <html>
 <head>
 <title>product page</title>
+<style>
+  img{
+  border-radius: 20px;
+  border-style:groove;
+  border-width: 5px;
+  border-color:purple;
+  }
+  #image:hover{
+  cursor: pointer;
+  background-color:chartreuse;
+  transform: scale(1.1);
+  transition-duration:3s;
+  transition-delay: 100ms;
+  transform: rotate(30deg);
+
+}
+#text:hover{
+  cursor: pointer;
+  background-color:yellow;
+  
+}
+body{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWKKcbYmYUm_bGYjKtG3WgDvQkENVX0wv09w&s');
+}
+#input {
+  padding: 8px;
+  width: 250px;
+  margin: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+h2 {
+  font-size: 1.5em;           
+  font-weight: bold;         
+  color: #222;                
+  margin-top: 20px;           
+  margin-bottom: 10px;        
+  text-transform: capitalize;
+  padding-bottom: 5px;        
+}
+ul {
+  list-style-type: disc;  
+  margin-left: 20px;      
+  padding-left: 10px;     
+  line-height: 1.6;        
+  color: #444;            
+  font-size: 1em;          
+}
+h1:hover{
+    font-family: sans-serif;
+    color: black;
+    transform: scale(1.2);
+  }
+ul li {
+
+  background-size: 16px 16px;
+  padding-left: 25px;         
+  margin-bottom: 8px;      
+  line-height: 1.5;
+}
+footer {
+  background-color: #333;   
+  color: white;            
+  text-align: center;       
+  padding: 20px;
+}
+footer a {
+  color: #ffcc00;        
+  text-decoration: none;
+  margin: 0 10px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+</style>
 </head>
 <body>
 <h1><i>WELCOME TO MY PRODUCT PAGE!!</i></h1>
 <center>
 <nav>
-<a href="home.html">HOME</a>|
-<a href="products.html">PRODUCTS</a>|
-<a href="cart.html">CART</a>|
-<a href ="thankyou.html">THANKYOU</a>|
+<a  id="text"href="home.html">HOME</a>|
+<a  id="text"href="products.html">PRODUCTS</a>|
+<a  id="text"href="cart.html">CART</a>|
+<a  id="text"href ="thankyou.html">THANKYOU</a>|
 </nav>
 </center>
 <img src="images/im7.jpeg" height="50px" width="50px">
-<input type="text" placeholder="search your categories....">
+<input id="input"type="text" placeholder="search your categories....">
 <h2><i>full sleeves with dhupatta</i></h2>
 <br>
-<img src="images/im10.jpeg"height="200px" width="250px">
-<img src="images/im11.jpeg"height="200px" width="250px">
-<img src="images/im12.jpeg"height="200px" width="250px">
-<img src="images/im13.jpeg"height="200px" width="250px">
-<img src="images/im14.jpeg"height="200px" width="250px">
+<img id="image"src="images/im10.jpeg"height="200px" width="250px">
+<img id="image" src="images/im11.jpeg"height="200px" width="250px">
+<img id="image" src="images/im12.jpeg"height="200px" width="250px">
+<img id="image"src="images/im13.jpeg"height="200px" width="250px">
+<img id="image"src="images/im14.jpeg"height="200px" width="250px">
 <h2><i>Product Description:full sleeves with dhupatta</i></h2>
 <ul >
   <li><strong>Design:</strong> Graceful full sleeves with intricate embroidery details, perfect for festive events, weddings, or casual gatherings.</li>
@@ -33,11 +109,11 @@
 
 <h2><i>sarees..</i></h2>
 <br>
-<img src="images/s2.jpeg"height="200px" width="250px">
-<img src="images/s3.jpeg"height="200px" width="250px">
-<img src="imagess4.jpeg"height="200px" width="250px">
-<img src="images/s8.jpeg"height="200px" width="250px">
-<img src="images/s6.jpeg"height="200px" width="250px">
+<img id="image"src="images/s2.jpeg"height="200px" width="250px">
+<img id="image"src="images/s3.jpeg"height="200px" width="250px">
+<img id="image"src="images/s4.jpeg"height="200px" width="250px">
+<img id="image"src="images/s8.jpeg"height="200px" width="250px">
+<img id="image" src="images/s6.jpeg"height="200px" width="250px">
 <h2><i>Product Description: elegant traditional saress</i></h2>
   <p>
     Drape yourself in timeless beauty with our <strong>Elegant Traditional Saree</strong> — a perfect blend of heritage and modern craftsmanship. This saree is designed for women who appreciate fine detailing, soft fabrics, and rich colors.
@@ -55,17 +131,17 @@
 </section>
 
 <video width="320" height="240" controls>
-  <source src="https://www.youtube.com/shorts/4pRjik8ddzg?feature=share" type="video/mp4">
+  <source src="https://v1.pinimg.com/videos/mc/hls/df/c9/5e/dfc95effa19a14d01435291f783d1b74.m3u8" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 <ul >
 <footer>
-<h2><strong>contact us</strong></h2>
-<>phone:<a href="tel:+1146273789">+1(123)456-7890</a></p>
+<h2 ><strong>contact us</strong></h2>
+<p>phone:<a href="tel:+1146273789">+1(123)456-7890</a></p>
 <p>email-id:<a href="lavas@my.com">Email-address</a></p>
 </footer>
-<h2><i>follow us</i></h2>
 <footer>
+<h2 ><strong>follow us</strong></h2>
 <a href="https://facebook.com/mypage">Facebook</a>
 <a href="https://twitter.com/mypage">Twitter</a>
 <a href="https://instagram.com/mypage">Instagram</a>
